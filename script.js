@@ -65,12 +65,12 @@ function selectOperator(e) {
       }
       choosenOperator = e.target.classList[1];
       miniDisplay.textContent = `${calculated} ${e.target.textContent}`;
-      num = "0";
+      num = "";
       mainDisplay.textContent = num;
     } else {
       choosenOperator = e.target.classList[1];
       miniDisplay.textContent = `${numStorage[0]} ${e.target.textContent}`;
-      num = "0";
+      num = "";
       mainDisplay.textContent = num;
       return;
     }
@@ -86,7 +86,7 @@ function selectOperator(e) {
       } else if (choosenOperator == "divide") {
         calculated = operate(divide, calculated, numStorage[numStorage.length - 1]);
       }
-      num = "0";
+      num = "";
       choosenOperator = "";
       mainDisplay.textContent = num;
     }
@@ -117,7 +117,7 @@ function calculate(e) {
       calculated = operate(divide, numStorage[numStorage.length - 2], numStorage[numStorage.length - 1]);
     }
     miniDisplay.textContent = `${calculated}`;
-    num = "0";
+    num = "";
     choosenOperator = "";
     mainDisplay.textContent = num;
   } else {
@@ -130,7 +130,7 @@ function calculate(e) {
     } else if (choosenOperator == "divide") {
       calculated = operate(divide, calculated, numStorage[numStorage.length - 1]);
     }
-    num = "0";
+    num = "";
     choosenOperator = "";
     mainDisplay.textContent = num;
     miniDisplay.textContent = `${calculated}`;
@@ -141,7 +141,7 @@ equalButton.addEventListener('click', calculate);
 
 function clearAll() {
   numStorage = [];
-  num = "0";
+  num = "";
   calculated = "";
   choosenOperator = '';
   miniDisplay.textContent = "";

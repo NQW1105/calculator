@@ -7,30 +7,44 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>    
-    <!-- button for digits 0...9, add, minus, multiply, divide, equal, clear -->
-    <!-- Display to show number. For now, just use random number -->
-    <div>
-      <div class="mini-display">Mini-display</div>
-      <div class="main-display">Main-display</div>
+    <div id="frame">
+
+      <div class="screen">
+        <div class="mini-display">Mini-display</div>
+        <div class="main-display">Main-display</div>
+      </div>
+
+      <!-- <div class="removeNum">
+        <button class="clear">CLEAR</button>
+        <button class="del">DELETE</button>
+      </div> -->
+
+      <div class="calc-buttons">
+        
+        <button class="clear">CLEAR</button>
+        <button class="del">DELETE</button>
+
+        <button class="num">7</button>
+        <button class="num">8</button>
+        <button class="num">9</button>
+        <button class="ops divide">/</button>
+
+        <button class="num">4</button>
+        <button class="num">5</button>
+        <button class="num">6</button>
+        <button class="ops multiply">x</button>
+
+        <button class="num">1</button>
+        <button class="num">2</button>
+        <button class="num">3</button>
+        <button class="ops substract">-</button>
+
+        <button class="num">0</button>
+        <button class="point">.</button>
+        <button class="equal">=</button>
+        <button class="ops add">+</button>
+        
     </div>
-    <button class="point">.</button>
-    <button class="num">0</button>
-    <button class="num">1</button>
-    <button class="num">2</button>
-    <button class="num">3</button>
-    <button class="num">4</button>
-    <button class="num">5</button>
-    <button class="num">6</button>
-    <button class="num">7</button>
-    <button class="num">8</button>
-    <button class="num">9</button>
-    <button class="ops add">+</button>
-    <button class="ops substract">-</button>
-    <button class="ops multiply">x</button>
-    <button class="ops divide">/</button>
-    <button class="equal">=</button>
-    <button class="del">DELETE</button>
-    <button class="clear">CLEAR</button>
     <script src="script.js"></script>  
   </body>
 </html>

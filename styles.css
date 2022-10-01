@@ -1,2 +1,56 @@
 /* Goal : Make this calculator looks like a traditional calculator. Refer reference below */
 /* https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn1.vectorstock.com%2Fi%2F1000x1000%2F85%2F85%2Fbasic-calculator-and-digits-vector-18958585.jpg&imgrefurl=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fbasic-calculator-and-digits-vector-18958585&tbnid=dIREDmp1Kn1xgM&vet=12ahUKEwjf__6zjaH6AhVZg2MGHUFQAiQQMygAegUIARDkAQ..i&docid=esXcBfLYec4s1M&w=777&h=1080&q=simple%20calculator&ved=2ahUKEwjf__6zjaH6AhVZg2MGHUFQAiQQMygAegUIARDkAQ */
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+
+#frame {
+  border-radius: 8px;
+  background: #73777B;  
+  padding: 20px;
+  width: 20%;
+}
+
+.screen {
+  border-radius: 8px;
+  background: #DAE5D0;  
+  padding: 20px;  
+  margin-bottom: 20px;
+}
+
+.removeNum {
+  display: flex;
+}
+
+.calc-buttons {
+  display: grid;
+  grid-template-columns: auto auto auto auto;  
+  gap: 5px 5px;
+}
+
+.num {
+  background: #D1D1D1;  
+}
+
+.mini-display, .main-display {
+  height: 20px;  
+}
+
+.clear {
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;  
+}
+  
+.del {
+    grid-column: 3 / span 2;
+    grid-row: 1 / 2;  
+}
+
+.clear, .del, .num, .point, .equal, .ops {
+  padding: 6px;
+  border-radius: 5px;  
+}
